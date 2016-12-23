@@ -28,6 +28,8 @@ namespace Angular_2_Boilerplate
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
